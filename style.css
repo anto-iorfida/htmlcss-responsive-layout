@@ -67,6 +67,11 @@ a{
     color: white;
 }
 
+.btn-purple{
+    background-color: #9792e4;
+    color: white;
+}
+
 .card{
     border-radius: 16px;
     padding: 20px 16px;
@@ -212,6 +217,41 @@ button > i.fa-brands{
     
 }
 
+/* ------------------------section benefit */
+.benefit{
+    background-color: #9792e4;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.benefit h1{
+    padding: 50px 0;
+    color: white;
+}
+.benefit .col{
+    width: calc(100% / 3 - 14px);
+}
+
+.benefit .card{
+    background-color: white;
+    text-align: left;
+}
+.benefit .row{
+    gap: 21px;
+}
+
+.benefit .card *{
+    margin:0 10px 10px 0;
+}
+
+.benefit .card h2,h3{
+    color: #9792e4;
+}
+
+.benefit .card h2{
+    font-size: 60px;
+}
+
 
 /**********************
          FOOTER
@@ -247,6 +287,11 @@ button > i.fa-brands{
     .planning .col{
         width: 100%;
     }
+    /* section benefit */
+    .benefit .col{
+        width: calc(50% - 14px);
+    }
+    
 }
 
 @media screen and (max-width:768px){
@@ -257,5 +302,9 @@ button > i.fa-brands{
     .card-partners{
         display: block;
         text-align: center;
+    }
+     /* section benefit */
+     .benefit .col{
+        width: 100%;
     }
 }
