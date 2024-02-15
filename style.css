@@ -175,6 +175,42 @@ button > i.fa-brands{
     border-radius: 40px;
     
 }
+/* ----------------------------section partners */
+.partners{
+    padding: 40px 0;
+}
+.partners h1{
+    color: #9792e4;
+}
+
+.title-partners *{
+    padding: 0 10px;
+    margin-bottom: 40px ;
+    text-align: center;
+}
+
+.card-partners{
+    display: flex;
+    background-color:#9792e4;
+    color: white;
+    margin-bottom: 30px;
+    border-radius: 40px;
+    padding: 10px 0 16px 0;
+}
+
+.title-card-partners{
+    padding: 30px 20px 0 20px;
+}
+.title-card-partners *:not(:last-child){
+    margin-bottom: 20px;
+}
+.card-partners img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    padding: 10px;
+    
+}
 
 
 /**********************
@@ -216,5 +252,10 @@ button > i.fa-brands{
 @media screen and (max-width:768px){
     .intro .col{
         width: 100%;
+    }
+    /* sectio partners */
+    .card-partners{
+        display: block;
+        text-align: center;
     }
 }
