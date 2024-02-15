@@ -9,7 +9,7 @@
     /* border: 0.5px dashed salmon; */
 }
 img{
-    /* width: 100%; */
+    width: 100%;
 }
 /**********************
         GENERAL
@@ -17,10 +17,29 @@ img{
 .container{
     max-width: 1180px;
     margin: 0 auto;
+    padding: 0 15px;
+}
+ 
+.container-small{
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    padding: 0 15px;
 }
 
 .flex{
     display: flex;
+}
+
+.grow{
+    flex-grow: 1;
 }
 
 ul{
@@ -34,7 +53,7 @@ a{
 
 .btn{
     background-color: transparent;
-    padding: 8px;
+    padding: 8px 14px;
     border-radius: 18px;
     border: none;
 }
@@ -43,7 +62,15 @@ a{
     background-color: white;
 }
 
+.btn-blue{
+    background-color:#0084fd;
+    color: white;
+}
 
+.card{
+    border-radius: 16px;
+    padding: 20px 16px;
+}
 /**********************
         HEADER
 **********************/
@@ -66,7 +93,88 @@ header ul {
 /**********************
          MAIN
 **********************/
+/* --------------------section intro */
+.intro{
+    padding: 50px 0 100px 0;
+}
 
+.particular-card{
+    text-align: left;
+}
+
+button > i.fa-brands{
+    font-size: 18px;
+    margin-right: 8px;
+    color: white;
+}
+.intro .col{
+    width: calc(100% / 3 - 10px);
+    margin: 10px 0;
+}
+.intro .row{
+    gap: 10px;
+}
+.card-intro{
+    background-color:#b5ddff ;
+    text-align: center;
+}
+.card-intro h2,
+.card-intro i{
+    color: #0084fd ;
+}
+.card-intro *:not(:last-child){
+    margin-bottom: 34px;
+}
+
+.card-intro i {
+    font-size: 80px;
+}
+
+.card-intro p {
+    color: #6e869b;
+    font-weight: bold;
+}
+/* ----------------------------------section planning */
+.planning{
+    background-color: #9792e4;
+}
+.planning .container{
+    padding: 150px 130px 70px 130px;
+}
+
+.col-right-pn{
+    padding: 130px 10px 0 0;
+}
+
+.col-right-pn *{
+    margin-bottom: 20px;
+}
+
+.col-right-pn i{
+    padding: 16px;
+    background-color: #9792e4;
+    border-radius: 50%;
+}
+
+.col-left-pn *{
+    margin-bottom: 60px;
+    color: white;
+
+}
+.col-left-pn img{
+    margin-bottom: 150px;
+}
+
+.planning .col{
+    width: 50%;
+}
+
+.card-planning{
+    background-color: white;
+    text-align: center;
+    border-radius: 40px;
+    
+}
 
 
 /**********************
@@ -79,6 +187,7 @@ header ul {
         RESPONSIVE
 **********************/
 @media screen and (max-width:992px){
+        /*header  */
     .icon-hamburger{
         display: block;
     }
@@ -86,9 +195,26 @@ header ul {
     .list-none{
         display: none;
     }
-
+    /* main */
+    /* section intro */
+    div.col.card.grow.flex.card-intro{
+        display: block;
+    }
+    .card-intro img{
+        width: 50%;
+    }
+    /* section planning*/
+    .planning .container{
+        display: block;
+        padding: 30px;
+    }
+    .planning .col{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:768px){
-
+    .intro .col{
+        width: 100%;
+    }
 }
