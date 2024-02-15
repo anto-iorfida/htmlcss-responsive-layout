@@ -227,6 +227,7 @@ button > i.fa-brands{
 .benefit h1{
     padding: 50px 0;
     color: white;
+    font-size: 50px;
 }
 .benefit .col{
     width: calc(100% / 3 - 14px);
@@ -235,13 +236,14 @@ button > i.fa-brands{
 .benefit .card{
     background-color: white;
     text-align: left;
+    padding: 24px 30px;
 }
 .benefit .row{
     gap: 21px;
 }
 
 .benefit .card *{
-    margin:0 10px 10px 0;
+    margin:0 10px 14px 0;
 }
 
 .benefit .card h2,h3{
@@ -250,6 +252,11 @@ button > i.fa-brands{
 
 .benefit .card h2{
     font-size: 60px;
+}
+
+.benefit button{
+    padding: 8px 50px;
+    font-weight: bold;
 }
 /* ------------------------section benefit */
 .about .container{
@@ -260,7 +267,7 @@ button > i.fa-brands{
     color: #9792e4;
 }
 .col-left-about{
-    width: 70%;
+    width: 75%;
     padding: 0 40px;
 }
 .col-left-about *{
@@ -271,10 +278,11 @@ button > i.fa-brands{
     margin-bottom: 30px;
 }
 .col-right-about{
-    width: 30%;
+    width: 25%;
     padding: 20px;
     color: #9792e4;
     font-size: 30px;
+    font-weight: bold;
 }
 .col-right-about img{
     border-radius: 50%;
@@ -307,12 +315,26 @@ button > i.fa-brands{
     padding: 26px 70px;
     border-radius: 40px;
 }
-
 /**********************
          FOOTER
 **********************/
+footer{
+    background-color: #333333;
+    color: white;
+}
+footer .container {
+    max-width: 500px;
+    /* padding: 0 350px; */
+    text-align: center;
+}
+footer p {
+    padding: 30px 0px;
+}
 
-
+footer a {
+    text-decoration: underline;
+    color: #9792e4;
+}
 
 /**********************
         RESPONSIVE
