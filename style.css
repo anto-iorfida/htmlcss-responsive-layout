@@ -38,8 +38,15 @@ img{
     display: flex;
 }
 
+.relative{
+    position: relative;
+}
 .grow{
     flex-grow: 1;
+}
+
+.text-align{
+    text-align: center;
 }
 
 ul{
@@ -65,6 +72,15 @@ a{
 .btn-blue{
     background-color:#0084fd;
     color: white;
+}
+
+.btn-apple{
+    padding: 12px 40px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    display: flex;
+    gap: 10px;
+    
 }
 
 .btn-purple{
@@ -105,32 +121,42 @@ header ul {
 
 .particular-card{
     text-align: left;
+    padding-bottom: 0;
+    padding-right: 80px;
 }
 
-button > i.fa-brands{
+button > i.fa-brands.fa-apple{
     font-size: 18px;
-    margin-right: 8px;
     color: white;
 }
+
 .intro .col{
-    width: calc(100% / 3 - 10px);
-    margin: 10px 0;
+    width: calc(100% / 3 - 8px);
+    margin-bottom: 12px;
 }
+
 .intro .row{
-    gap: 10px;
+    gap: 12px;
 }
+
 .card-intro{
     background-color:#b5ddff ;
-    text-align: center;
 }
+
 .card-intro h2,
 .card-intro i{
     color: #0084fd ;
 }
+
 .card-intro *:not(:last-child){
     margin-bottom: 34px;
 }
 
+.intro .card img {
+   display: block;
+   height: -webkit-fill-available;
+   margin: 0 auto;
+}
 .card-intro i {
     font-size: 80px;
 }
@@ -147,6 +173,23 @@ button > i.fa-brands{
     padding: 150px 130px 70px 130px;
 }
 
+.col-left-pn *{
+    margin-bottom: 60px;
+    color: white;
+}
+
+.col-left-pn img{
+    margin-bottom: 150px;
+}
+
+.col-left-pn {
+    margin-right: 50px;
+}
+
+.col-left-pn h2{
+    font-size: 34px;
+}
+
 .col-right-pn{
     padding: 130px 10px 0 0;
 }
@@ -161,13 +204,14 @@ button > i.fa-brands{
     border-radius: 50%;
 }
 
-.col-left-pn *{
-    margin-bottom: 60px;
-    color: white;
-
+.col-right-pn h3{
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
 }
-.col-left-pn img{
-    margin-bottom: 150px;
+
+.col-right-pn p{
+    font-style: italic;
 }
 
 .planning .col{
@@ -186,8 +230,11 @@ button > i.fa-brands{
 }
 .partners h1{
     color: #9792e4;
+    font-size: 42px;
 }
-
+.partners h4 {
+    letter-spacing: 4px;
+}
 .title-partners *{
     padding: 0 10px;
     margin-bottom: 40px ;
@@ -200,24 +247,22 @@ button > i.fa-brands{
     color: white;
     margin-bottom: 30px;
     border-radius: 40px;
-    padding: 10px 0 16px 0;
+    padding: 10px 0 16px 10px;
 }
 
 .title-card-partners{
-    padding: 30px 20px 0 20px;
+    padding: 34px 20px 0 20px;
 }
 .title-card-partners *:not(:last-child){
     margin-bottom: 20px;
 }
-.card-partners img{
-    height: 150px;
-    width: 150px;
-    border-radius: 100%;
-    padding: 10px;
-    
-}
 
-/* ------------------------section benefit */
+.card-partners img{ 
+   height: 150px;
+   width: 150px;
+   border-radius: 50%;
+} 
+   /* ------------------------section benefit */
 .benefit{
     background-color: #9792e4;
     text-align: center;
@@ -258,7 +303,7 @@ button > i.fa-brands{
     padding: 8px 50px;
     font-weight: bold;
 }
-/* ------------------------section benefit */
+/* ------------------------section about */
 .about .container{
     padding: 80px 0 ;
 }
@@ -363,6 +408,16 @@ footer a {
     }
     .planning .col{
         width: 100%;
+    }
+    .planning img {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    .planning h2{
+        font-size: 50px;
+    }
+    .col-right-pn{
+        padding-top: 10px;
     }
     /* section benefit */
     .benefit .col{
